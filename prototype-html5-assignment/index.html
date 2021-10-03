@@ -1,134 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>The Game of Chess</title>
-        <!--The title tag stores the name of the HTML document, which is displayed both in a browser's title bar and in a browser's tab.-->
-		<meta charset="UTF-8" />
-        <!--The charset attribute informs the browser which character encoding is used for the HTML document.-->
-		<meta name="description" content="An introduction to the game of chess">
-        <!--The name description attribute provides a brief description of the HTML document's context.-->
-		<meta name="author" content="Brandon Huckaby">
-        <!--The name author attribute stores the name of the author of the HTML document.-->
-	</head>
-	<body>
-		<div id="container">
-            <a id="top"></a>
-			<header>
-				<h1>All Things Chess</h1>
-			</header>
-			<blockquote><q>I have always a slight feeling of pity for the man who has no knowledge of chess, just as I would pity the man who has remained ignorant of love. Chess, like love, like music, has the power to make men happy.</q></blockquote>
-            <cite>The Game of Chess, by Siegbert Tarrasch</cite>
-			<div id="content">
-                <h2>Chess: An Introduction</h2>
-                <h3>Objective</h3>
-                <p>In chess, play is turn-based: The player with the white pieces moves one of their pieces, after which the player with the black pieces moves one of their pieces. This continues until the game ends either in victory for one player or a draw.</p>
-                <p>To win a game of chess, you must checkmate the enemy King. When a King is attacked by a piece, it is said to be <q>in check.</q> When a player's King is checked, they must use their turn to get out of check, either by moving the King, by interposing another piece between the King and the attacking piece, or by capturing the attacking piece. If the player can do none of these, then their King is said to be <q>checkmated</q> and they lose.
-                <h3>The Board</h3>
-                <p>The chessboard is an 8x8 grid of 64 squares: 32 light squares and 32 dark squares. Pieces are placed within the squares, and they move from within one square to another square.<p>
-                <h3>The Pieces</h3>
-                <dl>
-                    <dt>King</dt>
-                    <dd>Moves one square in any of the eight directions.</dd>
-                    <dt>Queen</dt>
-                    <dd>Moves in any of the eight directions as many squares as possible.</dd>
-                    <dt>Rook</dt>
-                    <dd>Moves horizontally and vertically (but not diagonally) as many squares as possible.</dd>
-                    <dt>Bishop</dt>
-                    <dd>Moves diagonally as many squares as possible.</dd>
-                    <dt>Knight</dt>
-                    <dd>Moves in an L-shape; two squares horizontally or vertically, then one square in one of two directions to form the L-shape.</dd>
-                    <dt>Pawn</dt>
-                    <dd>Moves one square forward, but has the option to move two squares on its first move.</dd>
-                </dl>
-                <h4>Addition Rules</h4>
-                <p>Castling - allows the King to move two squares towards either Rook and then place the Rook on the other side of the King. This move is <strong>only permissible</strong> under the following conditions:</p>
-                <ul>
-                    <li>Neither the King nor the castling Rook have moved.</li>
-                    <li>There are no pieces between the King and castling Rook.</li>
-                    <li>Neither the King's destination square nor the square through which it passes may be attacked by an enemy piece, i.e., the King cannot castle <q>into check</q> or <q>through check.</q></li>
-                    <li>The King is not currently in check, i.e., the King cannot castle <q>out of check.</q></li>
-                </ul>
-                <p>Pawn Promotion - when a Pawn reaches the eighth rank (the end of the board), the player removes the Pawn from the board and places a piece in its place. Note that the piece can be any piece except for a King or another Pawn, and note also that the piece does not have to be a captured piece, e.g., it is possible for a player to have more than one Queen as a result of promotion.</p>
-                <p>En Passant - French for "in passing". Because pawns attack diagonally, and because a pawn has the option to move two squares on its first move, there are scenarios in which one player's pawn moves two squares, with the first square being a square attacked by an enemy pawn. It appears that the moving pawn has bypassed the attacked square, but in fact the enemy pawn is able to capture the pawn <em>en passant</em>. The option to capture en passant is <strong>only available at the first opportunity</strong>, i.e., directly after the pawn has moved two squares. If the player does not capture en passant and makes another move, then they may not capture en passant on the following turns.</p>
-                <h3>General Strategy</h3>
-                <p>In chess theory, the game is divided into three phases:</p>
-                <ol>
-                    <li>Opening</li>
-                    <li>Middlegame</li>
-                    <li>Endgame</li>
-                </ol>
-                <p>Under construction . . . </p>
-                <h4>The Opening</h4>
-                <p>The strategic goals of the opening are as follows:</p>
-                <ul>
-                    <li>Control of the center</li>
-                    <li>Tempo</li>
-                    <li>Development of the minor pieces</li>
-                    <li>King safety</li>
-                </ul>
-                <p>Under construction . . . </p>
-                <h4>Top Five Players</h4>
-                <h5>October 2021</h5>
-                <table>
-                    <caption>Top Five Players by FIDE Rating</caption>
-                    <tbody>
-                        <tr>
-                            <th scope="col">Rank</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">FIDE Rating</th>
-                            <th scope="col">&Delta;Rating</th>
-                            <th scope="col">Country</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Carlsen, Magnus</td>
-                            <td>2855</td>
-                            <td>+8</td>
-                            <td>NOR</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Caruana, Fabiano</td>
-                            <td>2800</td>
-                            <td>-6</td>
-                            <td>USA</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Ding, Liren</td>
-                            <td>2799</td>
-                            <td>0</td>
-                            <td>CHN</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Nepomniachtchi, Ian</td>
-                            <td>2782</td>
-                            <td>-10</td>
-                            <td>RUS</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Aronian, Levon</td>
-                            <td>2782</td>
-                            <td>0</td>
-                            <td>ARM</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <ul>
-                    <li><a href="" title="Home">Home</a></li>
-                    <li><a href="" title="About All Things Chess">About</a></li>
-                    <li><a href="http://www.ualr.edu" title="University of Arkansas at Little Rock" target=_blank>UALR</a></li>
-                    <li><a href="mailto:bkhuckaby@ualr.edu" title="Contact">Contact</a></li>
-                </ul>
-                <img src="assets/img/gordo.jpeg" alt="Unrelated picture of Gordo" />
-                <h6><a href="mailto:bkhuckaby@ualr.edu" title="Email me">Email me</a></h6>
-                <h6><a href="#top">Back to top</a></h6>
-                <h6>&copy; 2021 Brandon Huckaby</h6>
-            </div>
-            <!--Closing div "content"-->
-        </div>
-        <!--Closing div "container"-->
-	</body>
+  <head>
+    <title>The Game of Chess</title>
+    <!--The title tag stores the name of the HTML document, which is displayed both in a browser's title bar and in a browser's tab.-->
+    <meta charset="UTF-8" />
+    <!--The charset attribute informs the browser which character encoding is used for the HTML document.-->
+    <meta name="description" content="An introduction to the game of chess">
+    <!--The name description attribute provides a brief description of the HTML document's context.-->
+    <meta name="author" content="Brandon Huckaby">
+    <!--The name author attribute stores the name of the author of the HTML document.-->
+  </head>
+  <body>
+    <div id="container">
+      <a id="top"></a>
+      <header>
+        <h1>All Things Chess</h1>
+        <blockquote><q>I have always a slight feeling of pity for the man who has no knowledge of chess, just as I would pity the man who has remained ignorant of love. Chess, like love, like music, has the power to make men happy.</q></blockquote>
+        <cite>The Game of Chess, by Siegbert Tarrasch</cite>
+      </header>
+      <div id="content">
+        <h2>Chess: An Introduction</h2>
+        <h3>Objective</h3>
+        <p>In chess, play is turn-based: The player with the white pieces moves one of their pieces, after which the player with the black pieces moves one of their pieces. This continues until the game ends either in victory for one player or a draw.</p>
+        <p>To win a game of chess, you must checkmate the enemy King. When a King is attacked by a piece, it is said to be <q>in check.</q> When a player's King is checked, they must use their turn to get out of check, either by moving the King, by interposing another piece between the King and the attacking piece, or by capturing the attacking piece. If the player can do none of these, then their King is said to be <q>checkmated</q> and they lose.
+        <h3>The Board</h3>
+        <p>The chessboard is an 8x8 grid of 64 squares: 32 light squares and 32 dark squares. Pieces are placed within the squares, and they move from within one square to another square.<p>
+        <h3>The Pieces</h3>
+        <dl>
+          <dt>King</dt>
+          <dd>Moves one square in any of the eight directions.</dd>
+          <dt>Queen</dt>
+          <dd>Moves in any of the eight directions as many squares as possible.</dd>
+          <dt>Rook</dt>
+          <dd>Moves horizontally and vertically (but not diagonally) as many squares as possible.</dd>
+          <dt>Bishop</dt>
+          <dd>Moves diagonally as many squares as possible.</dd>
+          <dt>Knight</dt>
+          <dd>Moves in an L-shape; two squares horizontally or vertically, then one square in one of two directions to form the L-shape.</dd>
+          <dt>Pawn</dt>
+          <dd>Moves one square forward, but has the option to move two squares on its first move.</dd>
+        </dl>
+        <h4>Addition Rules</h4>
+        <p>Castling - allows the King to move two squares towards either Rook and then place the Rook on the other side of the King. This move is <strong>only permissible</strong> under the following conditions:</p>
+        <ul>
+          <li>Neither the King nor the castling Rook have moved.</li>
+          <li>There are no pieces between the King and castling Rook.</li>
+          <li>Neither the King's destination square nor the square through which it passes may be attacked by an enemy piece, i.e., the King cannot castle <q>into check</q> or <q>through check.</q></li>
+          <li>The King is not currently in check, i.e., the King cannot castle <q>out of check.</q></li>
+        </ul>
+        <p>Pawn Promotion - when a Pawn reaches the eighth rank (the end of the board), the player removes the Pawn from the board and places a piece in its place. Note that the piece can be any piece except for a King or another Pawn, and note also that the piece does not have to be a captured piece, e.g., it is possible for a player to have more than one Queen as a result of promotion.</p>
+        <p>En Passant - French for "in passing". Because pawns attack diagonally, and because a pawn has the option to move two squares on its first move, there are scenarios in which one player's pawn moves two squares, with the first square being a square attacked by an enemy pawn. It appears that the moving pawn has bypassed the attacked square, but in fact the enemy pawn is able to capture the pawn <em>en passant</em>. The option to capture en passant is <strong>only available at the first opportunity</strong>, i.e., directly after the pawn has moved two squares. If the player does not capture en passant and makes another move, then they may not capture en passant on the following turns.</p>
+        <h3>General Strategy</h3>
+        <p>In chess theory, the game is divided into three phases:</p>
+        <ol>
+          <li>Opening</li>
+          <li>Middlegame</li>
+          <li>Endgame</li>
+        </ol>
+        <p>Under construction . . . </p>
+        <h4>The Opening</h4>
+        <p>The strategic goals of the opening are as follows:</p>
+        <ul>
+          <li>Control of the center</li>
+          <li>Tempo</li>
+          <li>Development of the minor pieces</li>
+          <li>King safety</li>
+        </ul>
+        <p>Under construction . . . </p>
+        <h4>Top Five Players</h4>
+        <h5>October 2021</h5>
+        <table>
+          <caption>Top Five Players by FIDE Rating</caption>
+          <tbody>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Name</th>
+              <th scope="col">FIDE Rating</th>
+              <th scope="col">&Delta;Rating</th>
+              <th scope="col">Country</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Carlsen, Magnus</td>
+              <td>2855</td>
+              <td>+8</td>
+              <td>NOR</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Caruana, Fabiano</td>
+              <td>2800</td>
+              <td>-6</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ding, Liren</td>
+              <td>2799</td>
+              <td>0</td>
+              <td>CHN</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Nepomniachtchi, Ian</td>
+              <td>2782</td>
+              <td>-10</td>
+              <td>RUS</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Aronian, Levon</td>
+              <td>2782</td>
+              <td>0</td>
+              <td>ARM</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><a href="../index.html" title="Home">Home</a></li>
+          <li><a href="" title="About All Things Chess">About</a></li>
+          <li><a href="http://www.ualr.edu" title="University of Arkansas at Little Rock" target="_blank">UALR</a></li>
+          <li><a href="mailto:bkhuckaby@ualr.edu" title="Contact">Contact</a></li>
+        </ul>
+        <img src="assets/img/gordo.jpeg" alt="Unrelated picture of Gordo" />
+        <h6><a href="mailto:bkhuckaby@ualr.edu" title="Email me">Email me</a></h6>
+        <h6><a href="#top">Back to top</a></h6>
+        <h6>&copy; 2021 Brandon Huckaby</h6>
+      </div>
+      <!--Closing div "content"-->
+    </div>
+    <!--Closing div "container"-->
+  </body>
 </html>

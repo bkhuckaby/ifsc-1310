@@ -1,0 +1,89 @@
+/* ------------Box Sizing------------ */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ------------Global Styles------------ */
+
+body {
+  background-color: #78C253;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", 
+    Verdana, "Verdana Ref", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  background-color: #3b638b;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+}
+
+header.primary h1 {
+  font-size: 2.8rem;
+  margin: 20px 10px;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header.primary h2 {
+  font-size: 1.75rem;
+  margin: 1.5rem auto;
+}
+
+header.primary nav {
+  width: 70vw;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+header.primary nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+header.primary nav li {
+  list-style-type: none;
+}
+
+header.primary nav a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 16px;
+  border-radius: 5rem;
+  transition: 0.25s;
+}
+
+header nav a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Query Example */
+@media screen and (max-width: 700px) {
+  header.primary nav ul {
+    flex-direction: column;
+    max-width: 15rem;
+    margin: auto;
+  }
+  
+  header.primary nav a {
+    display: block;
+  }
+  
+  header.primary nav li{
+    margin-bottom: 10px;
+  }
+}

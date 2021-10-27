@@ -34,8 +34,14 @@ h1 {
     position: absolute;
     background-color: #f1f1f1;
     color: #FFFFFF;
-    min-width: 200px;
+    min-width: 148px;
     box-shadow: 0.25em 0.25em 0.25em #000000;
+}
+
+.dropdown-items ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .dropdown-items a {
@@ -54,10 +60,26 @@ h1 {
     border-style: solid;
     border-width: 0.1em;
     border-color: #000000;
+    left: 0;
 }
 
 .dropdown-all:hover .dropdown-all {
     background-color: #3e8e41;
+}
+
+/*Added transparent box element after final main li to close gap between
+dropdown li and submenu li. Prior to addition of this block, the gap between
+Positioning Lab and Float 1 would prevent the user from navigating to the
+submenu*/
+.dropdown-all ul ul:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    padding: 10px;
+    top: 0px;
+    left: 100px;
 }
 
 .dropdown-sub {
@@ -80,6 +102,8 @@ h1 {
     color: #FFFFFF;
     min-width: 200px;
     box-shadow: 0.25em 0.25em 0.25em #000000;
+    top: 0;
+    left: 149px;
 }
 
 .submenu-items a {
@@ -102,4 +126,5 @@ h1 {
 
 .dropdown-sub:hover .dropdown-sub {
     background-color: #3e8e41;
+    position: absolute;
 }

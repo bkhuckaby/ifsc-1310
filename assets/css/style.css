@@ -1,5 +1,6 @@
 body {
-  background-color: #468847;
+  background-image: url('../img/main-background.jpg');
+  background-size: cover;
   font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
     Tahoma, sans-serif;
 }
@@ -8,9 +9,7 @@ h1 {
     background-color: #DCECD7;
     font-size: 2em;
     padding: 0.5em;
-    border-style: solid;
-    border-width: 0.05em;
-    border-color: #000000;
+    border-radius: 6px;
     display: inline-block;
 }
 
